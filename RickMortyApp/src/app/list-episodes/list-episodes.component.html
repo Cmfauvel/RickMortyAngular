@@ -1,0 +1,9 @@
+<div *ngIf="isLoading">
+    <p>Recupération des données en cours...</p>
+  </div>
+  
+  <div *ngIf="!isLoading">
+    <p *ngFor="let ep of episodes">
+      {{ep.name}}
+    </p>
+  </div>
